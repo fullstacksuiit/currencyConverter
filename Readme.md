@@ -1,6 +1,12 @@
 # Currenct Convertor
 
 ###### It takes any Currency and it's Value. Converts into other Currency
+..
+
+## Features :
+1. Get the lastest Currency.
+2. Get Historical Currency Values.
+3. Any Currency can be choosen as Base, which in case of third party API used was a bottleneck.
 
 
 ## Technology Stack:
