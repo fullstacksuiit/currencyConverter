@@ -11,7 +11,7 @@
   <p><a href={% url 'history' %}>historical</a></p>
     <form method="POST">
       {% csrf_token %}
-      <input type="text" name="lhs_value" value="{{lhs_value}}" />
+      <input type="text" name="lhs_value" value="{{lhs_value}}" placeholder="Value"/>
       <select name="lhs">
         <option value="{{lhs}}" selected>{{lhs}}</option>
         {% for c in currencies %}
