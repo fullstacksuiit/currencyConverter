@@ -7,11 +7,13 @@
     <title>AUS</title>
   </head>
   <body>
+
+  <p><a href={% url 'history' %}>historical</a></p>
     <form method="POST">
       {% csrf_token %}
       <input type="text" name="lhs_value" value="{{lhs_value}}" />
       <select name="lhs">
-      <option value="{{lhs}}" selected>{{lhs}}</option>
+        <option value="{{lhs}}" selected>{{lhs}}</option>
         {% for c in currencies %}
         <option value="{{c}}">{{c}}</option>
         {% endfor %}
@@ -26,7 +28,7 @@
       <select name="rhs">
         <option value="{{rhs}}" selected>{{rhs}}</option>
         {% for c in currencies %}
-            <option value="{{c}}">{{c}}</option>
+        <option value="{{c}}">{{c}}</option>
         {% endfor %}
       </select>
       <button type="submit">Convert</button>
